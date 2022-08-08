@@ -1,0 +1,40 @@
+
+【React】Docker Composeで開発環境を構築
+https://zenn.dev/chida/articles/51ba4ec06a0724
+
+docker compose run --rm react-app sh -c "yarn global add create-react-app && create-react-app app --template typescript"
+
+--rm: 停止済みのサービス・コンテナを削除します。
+
+–c cmdstring: 
+cmdstring をシェルの入力行であるかのように実行し、次に終了します。
+これは、単一コマンドのためにシェルを呼び出すプログラム (例えば、エディター) によって使用されます。
+sh は、cmdstring の後ろの引数を定位置パラメーターに割り当てます。
+cmd_name と指定すると、特殊パラメーター 0 がこのストリングに設定され、cmdstring でコマンドを実行するときに使用されます。
+
+yarn global add: 
+global コマンドは、実行可能ファイルをオペレーティング システムで使用できるようにします。
+add: インストール
+
+
+create-react-app:
+新しい React アプリを作る
+https://ja.reactjs.org/docs/create-a-new-react-app.html
+Create React App は React を学習するのに快適な環境であり、React で新しいシングルページアプリケーションを作成するのに最も良い方法です。
+
+create-react-app app --template typescript:
+create-react-appで React + Typescript な環境を構築する
+https://qiita.com/sanogemaru/items/05c2e9381d6ba2d9fccf
+create-react-app {プロジェクト名} --template typescript
+{プロジェクト名}には、自分のつけたいプロジェクト名を設定してください。
+
+チュートリアル：React の導入
+https://ja.reactjs.org/tutorial/tutorial.html
+
+ミューテート（mutate; 書き換え）
+イミュータビリティ（immutability; 不変性）
+
+インタラクティブ
+インタラクティブとは、相互に作用する、対話的な、双方向の、相乗効果の、などの意味を持つ英単語。
+ITの分野では、情報の送り手と受け手の関係が固定的ではなく、その場で互いにやり取りできる状態を指す。
+
